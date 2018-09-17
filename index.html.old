@@ -1,0 +1,51 @@
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>ASCII Animation</title>
+  <script type="text/javascript" src="http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/6/animations.js"></script>
+  <script type="text/javascript" src="ascii.js"> </script>
+  </head>
+
+  <body style="text-align:center" cz-shortcut-listen="true">
+    <h2>ASCII Animation Editor/Viewer</h2>
+    
+    <table>
+      <tbody>
+      <tr>
+        <td style="text-align:center">
+            Enter the frames below, separated by "<code>=====</code>".
+        </td>
+
+        <td style="text-align:center">
+            <input type="button" value="Play the Animation" onclick="playAnimation();"> &nbsp;&nbsp;
+            <input type="button" value="Stop" onclick="stopAnimation();">
+            <input type="button" value="Clear screen" onclick="clearFrame();">
+            <select id = "animation" onchange = "selectAni();">
+              <option></option>
+              <option value = "BIKE">Biker</option>
+              <option value = "Juggler">Juggler</option>
+              <option value = "Dive">Diver</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea id="frameArea" rows="25" cols="55" style="font-size:8pt">  
+            o  
+           /#\ 
+           _|_ 
+          =====
+           \o/ 
+            #  
+          _/ \_
+          </textarea>
+        </td>
+        <td>
+          <textarea id="displayArea" rows="25" cols="55" style="font-size:8pt"></textarea>
+        </td>
+      </tr>
+
+
+      </tbody>
+    </table>
+  </body>
+</html>
