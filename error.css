@@ -22,15 +22,17 @@ body {
     top: 0px;
 	z-index: -1;
 }
-
+#container
+{
+    margin-top: 550px;
+}
 #content
 {
 	position: relative;
 	display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 488px;
-	margin-top: 550px;
+    width: 448px;
 	margin-left: auto;
 	margin-right: auto;	
 	font-family: sans-serif;
